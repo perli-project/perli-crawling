@@ -1,0 +1,44 @@
+name: "📚 문서 수정 및 추가"
+description: "README.md 또는 프로젝트 문서(Docs)를 수정하거나 추가합니다."
+title: "[Docs] "
+labels: ["📚 Docs"]
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: "📖 수정/추가 목적"
+      description: "어떤 문서를 왜 수정하려고 하는지 명확하게 작성해주세요."
+      placeholder: |
+        - 예: README.md의 설치 가이드가 구버전이라 최신화가 필요함
+        - 예: 프로젝트 기여 가이드(CONTRIBUTING.md) 추가
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: "🎯 수정 범위"
+      description: "수정하거나 추가할 문서 파일명과 주요 내용을 기재해주세요."
+      placeholder: |
+        - 대상 파일: `README.md`, `docs/setup.md`
+        - 수정 내용: API 엔드포인트 설명 추가 및 오타 수정
+    validations:
+      required: true
+  - type: textarea
+    id: tasks
+    attributes:
+      label: "✅ 세부 작업 목록 (To-Do)"
+      description: "문서 작업을 완성하기 위한 세부 단계를 체크리스트로 작성해주세요."
+      placeholder: |
+        - [ ] 현재 README 오타 검토
+        - [ ] 바뀐 환경 변수 설정값 업데이트
+        - [ ] 이미지 링크 깨짐 확인 및 수정
+    validations:
+      required: true
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: "💬 기타 참고사항 (선택 사항)"
+      description: "리뷰어가 참고해야 할 배경지식이나 스크린샷 등이 있다면 기재해주세요."
+      placeholder: "기존에 논의되었던 슬랙 메시지 링크 혹은 참고 문서 주소"
+    validations:
+      required: false

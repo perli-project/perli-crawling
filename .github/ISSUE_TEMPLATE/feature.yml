@@ -34,7 +34,6 @@ body:
         - [ ] 백엔드 로직 구현
         - [ ] 프론트엔드 UI 개발
         - [ ] 단위 테스트 및 통합 테스트
-      render: markdown
     validations:
       required: true
   - type: textarea

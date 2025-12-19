@@ -41,6 +41,5 @@ body:
         - [ ] 코드 수정
         - [ ] 수정 사항 반영 후 테스트
         - [ ] QA 및 코드 리뷰 요청
-      render: markdown
     validations:
       required: true

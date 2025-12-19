@@ -1,0 +1,45 @@
+name: "🐳 DevOps / 인프라 설정"
+description: "배포, CI/CD, 인프라 구축 및 프로젝트 자동화 작업을 정의합니다."
+title: "[DevOps] "
+labels: ["🐳 DevOps"]
+body:
+  - type: textarea
+    id: work-summary
+    attributes:
+      label: "📄 작업 요약"
+      description: "어떤 인프라/자동화 작업을 진행하는지 간결하게 설명해주세요."
+      placeholder: "예: GitHub Actions를 이용한 운영 환경 배포 파이프라인 구축"
+    validations:
+      required: true
+  - type: textarea
+    id: infrastructure-context
+    attributes:
+      label: "🏗️ 배경 및 기술 스택"
+      description: "작업이 필요한 배경과 사용할 도구(Docker, K8s, Jenkins 등)를 작성해주세요."
+      placeholder: |
+        - 배경: 현재 수동 배포 방식으로 인해 배포 속도가 느리고 실수가 발생함.
+        - 대상: AWS EC2, Docker, GitHub Actions
+    validations:
+      required: true
+  - type: textarea
+    id: implementation-details
+    attributes:
+      label: "💡 상세 구현 계획"
+      description: "어떻게 환경을 구성하거나 자동화할 것인지 기술적인 세부 사항을 서술해주세요."
+      placeholder: |
+        - CI: main 브랜치 Push 시 빌드 및 테스트 자동화
+        - CD: 빌드 완료 후 Docker 이미지를 ECR에 푸시하고 운영 서버에 롤링 업데이트 적용
+    validations:
+      required: true
+  - type: textarea
+    id: tasks
+    attributes:
+      label: "✅ 세부 작업 목록 (To-Do)"
+      description: "완료해야 할 세부 작업들을 체크리스트로 작성해주세요."
+      placeholder: |
+        - [ ] Dockerfile 작성 및 최적화
+        - [ ] CI/CD 스크립트(.yml) 작성
+        - [ ] 환경 변수(Secrets) 설정
+        - [ ] 배포 테스트 및 결과 확인
+    validations:
+      required: true
